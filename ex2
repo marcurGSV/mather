@@ -1,0 +1,20 @@
+print("Введите имена участников (Для завершения напишите конец)")
+count = 0
+found_alex = False
+between_count = 0
+while True:
+    name = input("Введите имя участника")
+    if name == "конец":
+        break
+
+    count += 1
+    if name == "Александра":
+            found_alex = True
+            continue
+
+    if name == "Левон":
+            break
+
+    if found_alex:
+        between_count += 1
+        print(f"Между Александром и Левоном находиться {between_count} человек(а).")
